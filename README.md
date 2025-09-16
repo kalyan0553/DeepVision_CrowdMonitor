@@ -53,8 +53,8 @@ Cloudflared (for Colab to make Streamlit accessible)
 Open the notebook in Colab.
 Upload this repo or clone it:
 
-       !git clone https://github.com/your-username/deep-vision-crowd-monitor.git
-       cd deep-vision-crowd-monitor
+       !git clone https://github.com/your-username/DeepVision_CrowdMonitor.git
+       cd DeepVision_CrowdMonitor
        
 Run each code cell step by step → starting from Data Loader → CSRNet → Training → Inference → Streamlit.
 For the Streamlit dashboard, use Cloudflared to get a public link.
@@ -63,8 +63,8 @@ For the Streamlit dashboard, use Cloudflared to get a public link.
 
 **Clone the repo:**
 
-      git clone https://github.com/your-username/deep-vision-crowd-monitor.git
-      cd deep-vision-crowd-monitor
+      git clone https://github.com/your-username/DeepVision_CrowdMonitor.git
+      cd DeepVision_CrowdMonitor
 
 **Create a virtual environment (recommended):**
 
@@ -118,4 +118,4 @@ Feel free to fork it, add improvements, or raise issues!
 
 **👨‍💻 Author**
 
-Project developed by Kalyan Gugulothu**
+Project developed by **Kalyan Gugulothu**
