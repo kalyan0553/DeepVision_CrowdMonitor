@@ -74,7 +74,14 @@ For the Streamlit dashboard, use Cloudflared to get a public link.
 
 **Install requirements:**
 
-      pip install -r requirements.txt
+      torch>=1.12.0
+      torchvision>=0.13.0
+      numpy>=1.21.0
+      pillow>=9.0.0
+      opencv-python>=4.5.0
+      matplotlib>=3.5.0
+      streamlit>=1.12.0
+
 
 **Run training or inference:**
 
