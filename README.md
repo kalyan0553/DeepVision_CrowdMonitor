@@ -118,7 +118,12 @@ Feel free to fork it, add improvements, or raise issues!
 
 **👨‍💻 Author**
 
-Project developed by **Kalyan Gugulothu**
+Project developed by **Kalyan Gugulothu** <br><br><br><br><br><br><br><br><br>
+
+
+
+
+
 
 
 
