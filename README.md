@@ -118,7 +118,7 @@ Feel free to fork it, add improvements, or raise issues!
 
 **👨‍💻 Author**
 
-Project developed by **Kalyan Gugulothu** <br><br><br><br><br><br><br><br><br>
+Project developed by **Kalyan Gugulothu** <br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -132,7 +132,7 @@ Project developed by **Kalyan Gugulothu** <br><br><br><br><br><br><br><br><br>
 
 
 
-**Crowd Monitor Deep Vision🧑‍🤝‍🧑📊**
+**Crowd Monitor Deep Vision🧑‍🤝‍🧑📊**<br>
 **Project Overview:**
 
 This project implements a crowd monitoring system using deep learning and computer vision.
