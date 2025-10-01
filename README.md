@@ -119,3 +119,133 @@ Feel free to fork it, add improvements, or raise issues!
 **👨‍💻 Author**
 
 Project developed by **Kalyan Gugulothu**
+
+
+
+
+
+
+
+
+**Crowd Monitor Deep Vision🧑‍🤝‍🧑📊**
+**Project Overview:**
+
+This project implements a crowd monitoring system using deep learning and computer vision.
+It leverages Convolutional Neural Networks (CNNs) for crowd counting on the ShanghaiTech dataset and integrates:
+
+  **Real-time visualization** with Matplotlib & OpenCV
+
+  **SMS Alerts** via Twilio when crowd thresholds are exceeded
+
+  **Web Deployment using Streamlit + Ngrok** (for public access)
+
+ This solution can be applied in public safety monitoring, event management, and smart city surveillance.
+
+**📂 Dataset**
+
+ **ShanghaiTech Crowd Counting Dataset**
+
+   part_A → dense crowds
+   part_B → sparse crowds
+
+ **Directory structure (inside Google Drive):**
+
+    ShanghaiTech/
+      ├── part_A/
+      │   ├── train_data/
+      │   │   ├── images/
+      │   │   └── ground_truth/
+      │   └── test_data/
+      │       ├── images/
+      │       └── ground_truth/
+
+
+ ⚠️ Ensure your dataset is placed in Google Drive and update the image_dir and gt_dir paths inside the notebook.
+
+**🚀 How to Run (Google Colab)**
+
+**1. Open in Google Colab**
+ Upload the notebook and mount Google Drive:
+
+    from google.colab import drive
+    drive.mount('/content/drive')
+
+
+**2. Install Dependencies**
+
+    %pip install torch torchvision opencv-python matplotlib pyngrok twilio streamlit
+
+
+**3. Run DataLoader & Training**
+
+  Loads ShanghaiTech dataset
+
+  Trains CNN model for crowd counting
+
+**4. Run Evaluation**
+
+  Generates density maps
+
+  Shows crowd count predictions
+
+**5. Enable SMS Alerts**
+ Configure Twilio credentials:
+
+    account_sid = "YOUR_TWILIO_SID"
+    auth_token = "YOUR_TWILIO_AUTH_TOKEN"
+    from_ = "+1234567890"   # Twilio number
+    to_ = "+919876543210"   # Your phone number (E.164 format)
+
+
+ The system will send SMS alerts when crowd count > threshold.
+
+**6. Deploy via Streamlit + Ngrok**
+
+    !streamlit run app.py & npx localtunnel --port 8501
+
+
+  Or in Python:
+
+    from pyngrok import ngrok
+    public_url = ngrok.connect(8501)
+    print("App URL:", public_url)
+
+**⚙️ Dependencies**
+
+ Python 3.8+
+ PyTorch
+ Torchvision
+ OpenCV
+ NumPy, SciPy, Matplotlib
+ Streamlit
+ Pyngrok
+ Twilio
+
+**📱 Features**
+
+ Crowd counting using CNNs
+ Real-time density map visualization
+ Threshold-based SMS alerts
+ Streamlit web interface (with Ngrok for public access)
+
+**📊 Example Output**
+
+ **Input Image** → Crowd scene
+ **Predicted Density Map** → Heatmap of people distribution
+ **Predicted Count** → Numeric crowd estimate
+ **SMS Alert** → "⚠️ Alert: Crowd exceeded safe limit at [Location]. Current count = 152."
+
+**🙌 Credits**
+
+ **Dataset:** ShanghaiTech Crowd Counting Dataset
+ **Libraries: PyTorch, OpenCV, Streamlit, Twilio
+ Developed as part of **Deep Vision Crowd Monitor Project**
+
+ **🙌 Contribution**
+
+This project is built in a simple way so that anyone can understand and extend it.
+Feel free to fork it, add improvements, or raise issues!
+
+**👨‍💻 Author**
+
+Project developed by **Kalyan Gugulothu**
