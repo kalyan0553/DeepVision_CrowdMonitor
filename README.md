@@ -104,6 +104,7 @@ Dashboard → Run app.py with Streamlit, upload an image, and get instant result
 Upload an image of a crowd → see crowd count in seconds.
 Use real-time webcam/video → get alerts like "Warning: Too many people detected!".
 In the dashboard, you can see both the uploaded image and the estimated number of people.
+![img alt](https://github.com/springboardmentor-456/deepvision-crowd/blob/fe87c8a33f54d546729d0b090ca88a81a9eeae01/OUTPUT_Dashboard.png)
 
 **🌟 Why this project is useful?**
 
